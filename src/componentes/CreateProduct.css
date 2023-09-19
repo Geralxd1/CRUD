@@ -1,0 +1,89 @@
+.principal{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2196F3 ;
+}
+.ventana{
+    width: 50%;
+    height: auto;
+    background-color: #FFFFFF;
+    padding: 0;
+    box-shadow: 5px 7px 47px 1px rgba(76,91,127,0.88);
+    -webkit-box-shadow: 5px 7px 47px 1px rgba(76,91,127,0.88);
+    -moz-box-shadow: 5px 7px 47px 1px rgba(76,91,127,0.88);
+    border: 0.175rem solid #4CAF50;
+}
+.ventana__header{
+    background-color: #4CAF50 ;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__texto{
+    color: #333333;
+    font-weight: 700;
+}
+.ventana__cuerpo{
+    background-color: #FFFFFF;
+    height: calc(60vh - 2.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 70%;
+}
+.ventana__cuerpo__ingresos{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+.input__nombre{
+    color: #333333;
+    font-weight: 700;
+    margin-bottom: .25rem;
+}
+.input__campo{
+    background-color: #c7f3c9;
+    width: 100%;
+    height: 1.5rem;
+    border: 0.05rem solid #4CAF50;
+    padding-left: 1rem;
+    color: #333333;
+    font-weight: 400;
+}
+.ventana__botones{
+    margin-top: 1.5rem;  
+    display: flex;
+    justify-content: space-around;
+}
+.boton__agregar{
+    background-color: #4CAF50 ;
+    border: none;
+    font-family: 'Montserrat', 400;
+    color: #333333 ;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: 700;
+    box-shadow: -1px 1px 35px 10px rgba(94,231,140,0.64);
+    -webkit-box-shadow: -1px 1px 35px 10px rgba(94,231,140,0.64);
+    -moz-box-shadow: -1px 1px 35px 10px rgba(94,231,140,0.64);
+}
+.boton__regresar{
+    background-color: #FF5722;
+    color: #333333 ;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-weight: 700;
+    box-shadow: -1px 1px 35px 10px rgba(244,132,80,0.64);
+    -webkit-box-shadow: -1px 1px 35px 10px rgba(244,132,80,0.64);
+    -moz-box-shadow: -1px 1px 35px 10px rgba(244,132,80,0.64);
+}

@@ -1,0 +1,196 @@
+.all {
+    position: relative;
+}
+
+.Header {
+    background-color: #2196F3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.Header__Titulo {
+    color: #FFFFFF;
+    animation: none;
+    transition: 0.3s ease;
+}
+
+@keyframes mi-animacion {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.Header__Titulo:hover {
+    animation-name: mi-animacion;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+.Header__Crear {
+    color: #333333;
+    text-decoration: none;
+    font-weight: 500;
+    background-color: #E0E0E0;
+    width: 15%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease;
+    border: 0.1rem solid #333333;
+    border-radius: .5rem;
+    box-shadow: 5px 7px 47px 1px rgba(76, 91, 127, 0.88);
+    -webkit-box-shadow: 5px 7px 47px 1px rgba(76, 91, 127, 0.88);
+    -moz-box-shadow: 5px 7px 47px 1px rgba(76, 91, 127, 0.88);
+}
+
+.Header__Crear:hover {
+    background: #FF5722;
+    color: #FFFFFF;
+    cursor: pointer;
+    transform: translateY(3px);
+}
+
+.Contenedor__Tabla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Tabla {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 3rem;
+    box-shadow: 5px 7px 47px 1px rgba(76, 91, 127, 0.88);
+    -webkit-box-shadow: 5px 7px 47px 1px rgba(76, 91, 127, 0.88);
+    -moz-box-shadow: 5px 7px 47px 1px rgba(76, 91, 127, 0.88);
+}
+
+.Tabla__Cabecera {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+
+.Tabla__Cabecera__celda {
+    border: 3px solid #CCCCCC;
+    padding: 8px;
+    font-size: 1.25rem;
+}
+
+.Tabla__Cuerpo {
+    background-color: #FFFFFF;
+    padding: 8px;
+}
+
+.Tabla__Cuerpo__celda {
+    border: 3px solid #CCCCCC;
+    padding: 8px;
+}
+
+.celda__botones {
+    display: flex;
+    justify-content: space-around;
+}
+
+.boton_icono {
+    height: 1.5rem;
+}
+
+.boton__editar {
+    background-color: #4CAF50;
+}
+
+.boton__editar__texto {
+    color: #333333;
+    text-decoration: none;
+}
+
+.boton__editar:hover {
+    background: #01b107;
+    transform: translateY(3px);
+}
+
+.boton__eliminar__texto {
+    border: none;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #333333;
+    cursor: pointer;
+}
+
+.boton__eliminar {
+    background-color: #FF5722;
+}
+
+.boton__eliminar:hover {
+    background: #e63b07;
+    cursor: pointer;
+    transform: translateY(3px);
+}
+
+.boton__editar,
+.boton__eliminar {
+    cursor: pointer;
+    width: 40%;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    box-shadow: 11px 7px 9px -4px rgba(93, 93, 93, 0.62);
+    -webkit-box-shadow: 11px 7px 9px -4px rgba(93, 93, 93, 0.62);
+    -moz-box-shadow: 11px 7px 9px -4px rgba(93, 93, 93, 0.62);
+    transition: 0.4s ease;
+}
+
+.cuadro-confirmacion {
+    background-color: rgba(255, 87, 51, 0.9);
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 5px;
+    border: 0.175rem solid #e63b07;
+    z-index: 1000;
+    width: 35%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alerta__texto {
+    font-size: 1.25rem;
+}
+
+.alerta__botones {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.alerta__boton__aceptar {
+    background-color: #4CAF50;
+}
+
+.alerta__boton__cancelar {
+    background-color: #F44336;
+}
+
+.alerta__boton__aceptar,
+.alerta__boton__cancelar {
+    color: #FFFFFF;
+    padding: 10px;
+    cursor: pointer;
+}
